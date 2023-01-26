@@ -1,0 +1,88 @@
+
+:root {
+    --background : #1b1b1b ;
+}
+
+* {
+    color : white ;
+}
+
+*::-webkit-scrollbar {
+    display : none ;
+}
+
+
+#app-name-header ,
+#post-sections ,
+#news-updates ,
+#page-footer ,
+#sidebar ,
+#top {
+    display : none !important ;
+}
+
+body > #page {
+    background : transparent ;
+}
+
+html > body {
+    background : var(--background) ;
+}
+
+#posts-container {
+
+    justify-content         : center ;
+
+    grid-template-columns   : repeat( auto-fit , 10rem ) ;
+    grid-gap                : 1rem ;
+    display                 : grid ;
+}
+
+#posts-container > article {
+    margin : 0 ;
+}
+
+article img {
+    border-radius : 0.4rem ;
+}
+
+
+#posts {
+
+    margin          : 2rem ;
+
+    flex-direction  : column-reverse ;
+    display         : flex ;
+    gap             : 3rem ;
+}
+
+#posts > .paginator {
+
+    font-family     : monospace ;
+    font-weight     : bold ;
+    font-size       : 1rem ;
+
+    padding         : 0.4rem ;
+    margin          : 0 ;
+    width           : fit-content ;
+
+    align-self      : center ;
+
+    border-radius   : 0.7rem ;
+    background      : #343434 ;
+}
+
+#posts > .paginator > span ,
+#posts > .paginator > span > i {
+    color : var(--muted-text-color) ;
+}
+
+#posts > .paginator > a ,
+#posts > .paginator > a > i {
+    color : var(--preview-pending-color) ;
+}
+
+#posts > .paginator > a:hover {
+    background : transparent ;
+}
+

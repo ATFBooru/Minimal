@@ -1,0 +1,86 @@
+
+:root {
+    --background : #1b1b1b ;
+}
+
+* {
+    color : white ;
+}
+
+*::-webkit-scrollbar {
+    display : none ;
+}
+
+
+#app-name-header ,
+#post-sections ,
+#news-updates ,
+#page-footer ,
+#sidebar ,
+#top {
+    display     : none !important ;
+}
+
+body > #page {
+    background  : transparent ;
+}
+
+html > body {
+    background  : var(--background) ;
+}
+
+#posts-container {
+
+    justify-content         : center ;
+
+    grid-template-columns   : repeat( auto-fit , 10rem ) ;
+    grid-gap                : 1rem ;
+    display                 : grid ;
+}
+
+#posts-container > article {
+    margin          : 0 ;
+}
+
+article img {
+    border-radius   : 0.4rem ;
+}
+
+
+#posts {
+
+    margin          : 2rem ;
+
+    flex-direction  : column-reverse ;
+    display         : flex ;
+    gap             : 3rem ;
+}
+
+
+#content {
+
+    height          : 100vh ;
+
+    padding         : 0 ;
+
+    justify-content : center ;
+    justify-items   : center ;
+    align-items     : center ;
+
+    display         : grid ;
+}
+
+#content > ul.notice ,
+#comments {
+    display         : none ;
+}
+
+
+#content #image-resize-notice {
+
+    border-radius   : 0.5rem ;
+    border-color    : #FFFFFF44 ;
+    background      : #343434 ;
+
+    padding         : 0.5rem 1rem ;
+}

@@ -1,0 +1,26 @@
+
+root = true
+
+
+[*]
+
+end_of_line = lf
+
+
+[*.{json,css,js,md}]
+
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 80
+indent_style = space
+indent_size = 4
+charset = utf-8
+
+
+[*.{json,md}]
+max_line_length = off
+
+
+[*.md]
+
+trim_trailing_whitespace = false

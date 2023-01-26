@@ -1,0 +1,42 @@
+{
+    "manifest_version" : 3 ,
+
+    "name" : "ATF Minimal" ,
+    "version" : "1.0.0" ,
+
+    "description" : "Minimal UI for ATFBooru.",
+    "incognito" : "spanning",
+
+    "icons" : {
+        "48": "Assets/Icons/App/48.png" ,
+        "96": "Assets/Icons/App/96.png"
+    },
+
+    "content_scripts" : [{
+
+        "run_at" : "document_start" ,
+        "css" : [ "Styles/Posts.css" ] ,
+
+        "matches" : [
+            "*://Booru.AllTheFallen.Moe/posts?*" ,
+            "*://Booru.AllTheFallen.Moe/posts" ,
+            "*://Booru.AllTheFallen.Moe/"
+        ]
+
+    },{
+
+        "run_at" : "document_start" ,
+        "css" : [ "Styles/Post.css" ] ,
+
+        "matches" : [
+            "*://Booru.AllTheFallen.Moe/posts/*"
+        ]
+
+    }],
+
+    "host_permissions" : [
+        "*://*.AllTheFallen.Moe/*"
+    ],
+
+    "permissions" : []
+}
